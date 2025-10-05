@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ACEP - Advanced Clean Energy Planning
 
-## Getting Started
+A modern SaaS prototype web application for remote industries to plan electricity needs using solar energy and storage systems instead of fuel generators.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Modern UI/UX**: Clean, futuristic design with eco-tech theme
+- **Authentication**: Secure login/register with Supabase
+- **Dashboard**: User-friendly interface for energy planning
+- **AI Assistant**: Integration ready for n8n webhook (ACEP Assistant)
+- **Responsive Design**: Works on all devices
+- **TypeScript**: Full type safety
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: Next.js 15.5.4
+- **Styling**: Tailwind CSS 4
+- **Database & Auth**: Supabase
+- **Language**: TypeScript
+- **Deployment**: Vercel ready
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Installation
 
-## Learn More
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Set up environment variables:
+   Create a `.env.local` file with:
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   N8N_WEBHOOK_URL=https://n8n-elrsppnn.n8x.web.id/webhook/ccbda9d6-88aa-42fd-9de6-84710448761b
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Deploy on Vercel
+## 🎨 Design Theme
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Colors**: Green (#4ADE80) and blue-gray (#0F172A) tones
+- **Style**: Clean, modern, eco-energy focused
+- **Components**: Rounded corners, soft shadows, glass morphism effects
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Pages
+
+- **`/`** - Landing page with hero section and benefits
+- **`/login`** - User authentication
+- **`/register`** - User registration
+- **`/dashboard`** - Main dashboard with ACEP Assistant
+
+## 🔧 API Routes
+
+- **`/api/chat`** - Handles messages to ACEP Assistant via n8n webhook
+
+## 🚀 Deployment
+
+The app is ready for deployment on Vercel:
+
+1. Push to GitHub
+2. Connect to Vercel
+3. Add environment variables in Vercel dashboard
+4. Deploy!
+
+## 📝 Environment Variables
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | Yes |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anonymous key | Yes |
+| `N8N_WEBHOOK_URL` | n8n webhook for ACEP Assistant | Yes |
+
+## 🎯 Future Enhancements
+
+- Energy analytics dashboard
+- Storage planning tools
+- Solar optimization features
+- Real-time monitoring
+- Cost analysis tools
+
+## 📄 License
+
+© 2025 ACEP. All rights reserved.
