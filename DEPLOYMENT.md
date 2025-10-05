@@ -26,13 +26,16 @@
 3. **Import from GitHub:**
    - Repository: `VicoAritonang/acep`
    - Framework: Next.js (auto-detected)
-4. **Configure Environment Variables:**
+4. **Configure Environment Variables in Vercel Dashboard:**
+   - Setelah project dibuat, klik pada project
+   - Pergi ke tab "Settings" → "Environment Variables"
+   - Tambahkan variables berikut:
    ```
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-   N8N_WEBHOOK_URL=https://n8n-elrsppnn.n8x.web.id/webhook/ccbda9d6-88aa-42fd-9de6-84710448761b
+   NEXT_PUBLIC_SUPABASE_URL = your_supabase_project_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY = your_supabase_anon_key
+   N8N_WEBHOOK_URL = https://n8n-elrsppnn.n8x.web.id/webhook/ccbda9d6-88aa-42fd-9de6-84710448761b
    ```
-5. **Click "Deploy"**
+5. **Redeploy** setelah menambahkan environment variables
 
 ### Option B: Deploy via Vercel CLI
 
